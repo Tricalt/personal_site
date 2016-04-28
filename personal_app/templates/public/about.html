@@ -1,0 +1,41 @@
+
+{% extends "layout.html" %}
+
+
+
+
+
+
+
+{% block content %}
+
+
+{% include "sidebar.html" %}
+
+
+
+
+<div class = 'container cv-box'>
+	<div class="row cv-row">
+
+		<div class="col-xs-12 col-md-12 hidden-md hidden-lg">
+		<p2> CV is not visible on mobile, please download PDF to view it</p2>
+
+		</div>
+	  
+	    <div class="col-xs-12 col-md-12 hidden-sm hidden-xs resume-box">
+	    
+	    
+	    <object data="{{ url_for('static',filename='assets/resume.pdf')}}" type="application/pdf" width="700" height="800">
+
+	    
+	    </div>
+	</div>
+</div>
+
+
+
+
+
+{% endblock %}
+
